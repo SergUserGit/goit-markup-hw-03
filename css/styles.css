@@ -18,6 +18,18 @@
   --border-color: #ECECEC;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   color: var(--main-color);
   font-family: var(--font-roboto);
@@ -46,14 +58,13 @@ body {
   height: 1px;
   overflow: hidden;
   border: 0;
-  padding: 0;
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   margin: -1px;
 }
 
 .container {
-  width: 1230px;
+  max-width: 1230px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -75,10 +86,6 @@ body {
 .header-container {
   display: flex;
   align-items: center;
-}
-
-.header-nav {
-  margin-right: 344px;
 }
 
 .ref-style {
@@ -109,7 +116,6 @@ body {
 
 .header-list {
   display: flex;
-  padding-left: 0;
   margin-top: 32px;
   margin-bottom: 32px;
 }
@@ -124,9 +130,9 @@ body {
 
 .header-address {
   display: flex;
-  padding-left: 0;
   margin-top: 32px;
   margin-bottom: 32px;
+  margin-left: auto;
 }
 
 .header-contact {
@@ -147,7 +153,9 @@ body {
 }
 
 .ref-header:hover,
-.ref-header:focus {
+.ref-header:focus,
+.head-phone:hover,
+.head-phone:focus {
   color: var(--text-blue-color);
 }
 
@@ -157,13 +165,16 @@ body {
 
 /*section hero*/
 .hero {
+
+  padding-top: 200px;
+  padding-bottom: 200px;
+
   background-color: var(--background-hero);
   text-align: center;
 }
 
 .hero-title {
   margin-bottom: 30px;
-  margin-top: 0;
 
   font-weight: 900;
   font-size: 44px;
@@ -191,7 +202,6 @@ body {
 }
 
 .advantages-title {
-  margin-top: 0;
   margin-bottom: 10px;
 
   font-size: 14px;
@@ -200,24 +210,9 @@ body {
   text-transform: uppercase;
 }
 
-.paragraph-advantages {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
 .advantages-list {
-  margin-bottom: 0;
-  margin-top: 0;
-  padding-left: 0;
   display: flex;
-}
-
-.advantages-item {
-  margin-right: 30px;
-}
-
-.advantages-item:last-child {
-  margin-right: 0;
+  gap: 30px;
 }
 
 /*section activity*/
@@ -228,7 +223,6 @@ body {
 }
 
 .activity-title {
-  margin-top: 0;
   margin-bottom: 50px;
 
   font-size: 36px;
@@ -238,20 +232,9 @@ body {
 }
 
 .activity-list {
-  margin-bottom: 0;
-  margin-top: 0;
-  padding-left: 0;
   display: flex;
   justify-content: center;
-}
-
-.activity-item {
-  width: 370px;
-  margin-right: 30px;
-}
-
-.activity-item:last-child {
-  margin-right: 0;
+  gap: 30px;
 }
 
 /*section our team*/
@@ -260,29 +243,22 @@ body {
 }
 
 .ourteam-group {
-  margin-top: 0;
-  margin-bottom: 0;
   display: flex;
   justify-content: center;
-  padding-left: 0;
+  gap: 30px;
 }
 
 .list-ourteam {
   width: 270px;
-  margin-right: 30px;
 
   background: var(--background-white-color);
   box-shadow: 0px 1px 3px var(--box-shadow-one), 0px 1px 1px var(--box-shadow-two), 0px 2px 1px var(--box-shadow-three);
   border-radius: 0px 0px 4px 4px;
 }
 
-.list-ourteam:last-child {
-  margin-right: 0;
-}
 
 .team-member {
   margin-bottom: 10px;
-  margin-top: 0;
 
   font-weight: 500;
   font-size: 16px;
@@ -297,7 +273,6 @@ body {
 
 .paragraph-team {
   margin-bottom: 30px;
-  margin-top: 0;
 
   font-weight: 400;
   font-size: 16px;
@@ -341,11 +316,6 @@ body {
   font-style: normal;
 }
 
-.footer-list {
-  margin: 0;
-  padding-left: 0;
-}
-
 .footer-item {
   margin-bottom: 9px;
 }
@@ -361,9 +331,6 @@ body {
 }
 
 .button-list {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0;
   display: flex;
 }
 
@@ -407,42 +374,25 @@ body {
 }
 
 .category-group {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  gap: 30px;
 }
 
 .list-portfolio {
-
   width: 370px;
-  margin-right: 30px;
-  margin-bottom: 30px;
-
   background: var(--background-white-color);
   border-bottom: 1px solid var(--item-portfolio-color);
 }
 
-.list-portfolio:nth-child(3n) {
-  margin-right: 0;
-}
-
-.list-portfolio:nth-child(7n),
-.list-portfolio:nth-child(8n),
-.list-portfolio:nth-child(9n) {
-  margin-bottom: 0;
-}
-
 .group-category {
   margin: 20px 24px;
+  border: 1px solid transparent;
 }
-
 
 .element {
   margin-bottom: 4px;
-  margin-top: 0;
 
   font-size: 18px;
   line-height: 2;
@@ -450,9 +400,6 @@ body {
 }
 
 .paragraph-element {
-  margin-top: 0;
-  margin-bottom: 0;
-
   font-weight: 400;
   font-size: 16px;
   line-height: 1.875;
