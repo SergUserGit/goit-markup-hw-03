@@ -94,8 +94,6 @@ body {
 
 .logo-style {
   margin-right: 95px;
-  margin-bottom: 25px;
-  margin-top: 24px;
 }
 
 .span-web {
@@ -116,8 +114,6 @@ body {
 
 .header-list {
   display: flex;
-  margin-top: 32px;
-  margin-bottom: 32px;
 }
 
 .header-item {
@@ -129,10 +125,8 @@ body {
 }
 
 .header-address {
-  display: flex;
-  margin-top: 32px;
-  margin-bottom: 32px;
   margin-left: auto;
+  display: flex;
 }
 
 .header-contact {
@@ -144,6 +138,10 @@ body {
 }
 
 .ref-header {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1428;
@@ -174,7 +172,8 @@ body {
 }
 
 .hero-title {
-  margin-bottom: 30px;
+  max-width: 696px;
+  margin: 0 auto 30px;
 
   font-weight: 900;
   font-size: 44px;
